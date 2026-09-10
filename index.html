@@ -1,13 +1,57 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>scaffold</title>
+    <title>Alexander Chen — Junior Fullstack Web Developer Portfolio</title>
+    <meta name="description" content="Alexander Chen — Junior Fullstack Web Developer specializing in React, Next.js, TypeScript, Node.js, and cloud-native architectures. View projects, skills, and experience." />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Alexander Chen — Fullstack Web Developer Portfolio" />
+    <meta property="og:description" content="Junior Fullstack Web Developer specializing in React, Next.js, TypeScript, and Node.js. Building resilient architectures and precision web interfaces." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://alexanderchen.dev" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Alexander Chen — Fullstack Web Developer" />
+    <meta name="twitter:description" content="Junior Fullstack Web Developer specializing in React, Next.js, TypeScript, and Node.js." />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- Google Fonts: Inter + JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Alexander Chen",
+      "jobTitle": "Junior Fullstack Web Developer",
+      "url": "https://alexanderchen.dev",
+      "sameAs": [
+        "https://github.com",
+        "https://linkedin.com",
+        "https://x.com"
+      ],
+      "email": "alexander.chen.dev@gmail.com",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University"
+      },
+      "knowsAbout": ["React", "Next.js", "TypeScript", "Node.js", "PostgreSQL", "Docker", "Tailwind CSS"]
+    }
+    </script>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
