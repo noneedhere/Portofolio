@@ -2,6 +2,8 @@ import { personalInfo } from '../../data/personalInfo';
 import { stats } from '../../data/experience';
 import { RevealOnScroll } from '../animations/RevealOnScroll';
 import { StaggerContainer, StaggerItem } from '../animations/StaggerContainer';
+import { SectionBadge } from '../ui/SectionBadge';
+import { MetricCard } from '../ui/MetricCard';
 
 export function About() {
   return (
@@ -14,9 +16,7 @@ export function About() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             {/* Left Column: Philosophy */}
             <div className="lg:col-span-7">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-brand-emerald mb-6">
-                <span>01 / ABOUT &amp; PHILOSOPHY</span>
-              </div>
+              <SectionBadge label="01 / ABOUT &amp; PHILOSOPHY" className="mb-6" />
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
                 I engineer digital products that balance clean, intuitive interfaces with scalable systems.
               </h2>
@@ -42,26 +42,7 @@ export function About() {
             <StaggerContainer className="lg:col-span-5 grid grid-cols-2 gap-4 w-full">
               {stats.map((stat, i) => (
                 <StaggerItem key={i}>
-                  <div className="p-6 rounded-2xl bg-[#161616] border border-white/5 hover:border-brand-emerald/30 transition-all duration-300">
-                    <p className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-                      {stat.value}
-                      {stat.suffix && (
-                        <span className="text-brand-emerald">{stat.suffix}</span>
-                      )}
-                    </p>
-                    <p className="text-xs font-medium text-neutral-400 mt-2">
-                      {stat.label}
-                    </p>
-                    <p
-                      className={`text-[11px] mt-1 font-mono ${
-                        stat.highlighted
-                          ? 'text-brand-emerald'
-                          : 'text-neutral-500'
-                      }`}
-                    >
-                      {stat.detail}
-                    </p>
-                  </div>
+                  <MetricCard stat={stat} />
                 </StaggerItem>
               ))}
             </StaggerContainer>
@@ -71,3 +52,4 @@ export function About() {
     </section>
   );
 }
+

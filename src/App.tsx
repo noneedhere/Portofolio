@@ -7,10 +7,12 @@ import { Projects } from './components/sections/Projects';
 import { Experience } from './components/sections/Experience';
 import { Contact } from './components/sections/Contact';
 import { Footer } from './components/sections/Footer';
+import { SEO } from './components/SEO';
 
 function App() {
   return (
     <>
+      <SEO />
       <Navbar />
       <main className="relative z-10">
         <Hero />
