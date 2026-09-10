@@ -9,8 +9,8 @@ interface SEOProps {
 }
 
 export function SEO({
-  title = 'Alexander Chen — Junior Fullstack Web Developer Portfolio',
-  description = 'Alexander Chen — Junior Fullstack Web Developer specializing in React, Next.js, TypeScript, Node.js, and cloud-native architectures. View projects, skills, and experience.',
+  title = 'Zidane Rosyidi — Junior Fullstack Web Developer Portfolio',
+  description = 'Zidane Rosyidi — Junior Fullstack Web Developer specializing in React, Next.js, TypeScript, Node.js, and cloud-native architectures. View projects, skills, and experience.',
   url = 'https://alexanderchen.dev',
   image = '',
   type = 'website',

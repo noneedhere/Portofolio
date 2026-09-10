@@ -47,7 +47,7 @@ export interface Project {
   techStack: string[];
   primaryCta: { label: string; url: string };
   secondaryCta: { label: string; url: string };
-  mockup: 'telemetry' | 'code' | 'performance';
+  image: string;
 }
 
 export interface ExperienceEntry {

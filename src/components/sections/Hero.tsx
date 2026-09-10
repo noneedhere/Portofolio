@@ -113,7 +113,7 @@ export function Hero() {
         >
           <div className="relative group">
             <div className="absolute -inset-1 rounded-2xl bg-gradient-to-t from-brand-emerald/20 via-transparent to-transparent opacity-70 blur-md group-hover:opacity-100 transition duration-500" />
-            <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-neutral-900 max-w-[320px] sm:max-w-[360px] md:max-w-[390px] aspect-[3/4]">
+            <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-neutral-900 max-w-[320px] sm:max-w-[400px] md:max-w-[440px] aspect-[4/3]">
               <img
                 alt={`${personalInfo.name} - Junior Fullstack Developer Portrait`}
                 className="w-full h-full object-cover object-top filter grayscale contrast-[1.1] brightness-95 group-hover:grayscale-0 transition-all duration-700 ease-out"
